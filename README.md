@@ -19,4 +19,8 @@ Addon for CWSBP 0.3 and 0.3.5 is coming soon
 
 Error Command Block Tools: Mining Speed: 1
 
+I have a discord account
+
+John discord (New link) [Here](https://discord.gg/BCY3j38d)
+
 Click [Release Tab](https://github.com/SuperHero2010/More-Command-Block-Tools-CWSBP-/releases/tag/1.0.0)
