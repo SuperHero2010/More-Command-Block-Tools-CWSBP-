@@ -5,8 +5,6 @@ Note: My addons all have the same id of the addons above.
 
 Unofficial addon for [Cracker's Wither Storm Bedrock Port](https://decayed-team.mystrikingly.com/) by [Tazo (TazaLaTazo)](https://www.youtube.com/@TazoLaTaza), that add more Command Block Tools, that can destroy Wither Storm Command Block.
 
-Addon for CWSBP 0.4.5 is coming soon
-
 Error Command Block Tools: Mining Speed: 1
 
 I have a discord account
