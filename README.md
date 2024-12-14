@@ -9,6 +9,6 @@ Error Command Block Tools: Mining Speed: 1
 
 I have a discord account
 
-John discord (New link II) [Here](https://discord.gg/wYpqH4SRsp)
+John discord (New link II) [Here](https://discord.gg/5BWTwGf8Rt)
 
 Click [Release Tab](https://github.com/SuperHero2010/More-Command-Block-Tools-CWSBP-/releases) to download
