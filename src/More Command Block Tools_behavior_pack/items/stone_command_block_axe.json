@@ -1,0 +1,243 @@
+{
+    "format_version": "1.20.60",
+    "minecraft:item": {
+        "description": {
+            "menu_category": {
+                "category": "equipment",
+                "group": "itemGroup.name.axe"
+            },
+            "identifier": "witherstormmod:stone_command_block_axe"
+        },
+        "components": {
+            "minecraft:can_destroy_in_creative": true,
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:damage": 8,
+            "minecraft:enchantable": {
+                "value": 4,
+                "slot": "axe"
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": {
+                            "tags": "q.any_tag('wood', 'pumpkin', 'plant')"
+                        },
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:chest",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:melon_block",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crafting_table",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crimson_planks",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crimson_stem",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:stripped_crimson_stem",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:stripped_crimson_hyphae",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crimson_hyphae",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crimson_slab",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crimson_pressure_plate",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crimson_fence",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crimson_trapdoor",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crimson_fence_gate",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crimson_stairs",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crimson_button",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crimson_wall_sign",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:warped_planks",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:warped_stem",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:stripped_warped_stem",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:stripped_warped_hyphae",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:warped_hyphae",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:warped_slab",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:warped_pressure_plate",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:warped_fence",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:warped_trapdoor",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:warped_fence_gate",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:warped_button",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:warped_door",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:warped_wall_sign",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:crimson_door",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:loom",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:trapped_chest",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:lectern",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:bookshelf",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:composter",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:jukebox",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:soul_campfire",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:campfire",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:bee_nest",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:beehive",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:cartography_table",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:scaffolding",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:warped_stairs",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:noteblock",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:bamboo_block",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:bamboo",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:bamboo_planks",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:bamboo_mosaic",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:stripped_bamboo_block",
+                        "speed": 15
+                    },
+                    {
+                        "block": "minecraft:cherry_planks",
+                        "speed": 15
+                    }
+                ]
+            },
+            "minecraft:display_name": {
+                "value": "Stone Command Block Axe"
+            },
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_axe"
+                ]
+            },
+            "minecraft:hover_text_color": "light_purple",
+            "minecraft:icon": "stone_command_block_axe"
+        }
+    }
+}

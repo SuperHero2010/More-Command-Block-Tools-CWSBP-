@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "witherstormmod_netherite_command_block_sword_effect",
+    "witherstormmod_netherite_command_block_axe_effect",
+    "witherstormmod_netherite_command_block_pickaxe_effect",
+    "witherstormmod_netherite_command_block_shovel_effect",
+    "witherstormmod_netherite_command_block_hoe_effect",
+    "command_block_items_particles",
+    "crafting_drop",
+    "lightning_weapon_aura"
+  ]
+}

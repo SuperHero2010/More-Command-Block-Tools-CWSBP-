@@ -1,0 +1,10 @@
+give @s witherstormmod:copper_command_block_hoe
+give @s witherstormmod:copper_command_block_axe
+give @s witherstormmod:copper_command_block_shovel
+give @s witherstormmod:copper_command_block_pickaxe
+give @s witherstormmod:copper_command_block_sword
+give @s witherstormmod:netherite_command_block_axe
+give @s witherstormmod:netherite_command_block_hoe
+give @s witherstormmod:netherite_command_block_pickaxe
+give @s witherstormmod:netherite_command_block_shovel
+give @s witherstormmod:netherite_command_block_sword

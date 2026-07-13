@@ -1,0 +1,1933 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "witherstormmod:copper_command_block_axe",
+            "menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.axe"
+            }
+        },
+        "components": {
+            "minecraft:icon": "copper_command_block_axe",
+            "minecraft:max_stack_size": 1,
+            "minecraft:stacked_by_data": true,
+            "minecraft:glint": false,
+            "minecraft:hand_equipped": true,
+            "minecraft:damage": 8,
+            "minecraft:enchantable": {
+                "slot": "axe",
+                "value": 10
+            },
+            "minecraft:mining_speed": 1,
+            "minecraft:allow_off_hand": true,
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "witherstormmod:copper_command_block_axe"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability + 0.2 * context.other->query.max_durability"
+                    }
+                ]
+            },
+            "minecraft:can_destroy_in_creative": true,
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:transformable_items",
+                    "minecraft:is_axe"
+                ]
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:oak_shelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_shelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_shelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_shelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_shelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_shelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_shelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_shelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_shelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_shelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_shelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_shelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:armor_stand",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:banner",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:barrel",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bed",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bee_nest",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:beehive",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oak_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_raft",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oak_chest_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_chest_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_chest_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_chest_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_chest_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_chest_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_chest_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_chest_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_chest_boat",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_chest_raft",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bookshelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cartography_table",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:carved_pumpkin",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:chest",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crafting_table",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oak_fence",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_fence",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_fence",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_fence",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_fence",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_fence",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_fence",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_fence",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_fence",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_fence",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_fence",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_fence",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:fence_gate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_fence_gate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_fence_gate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_fence_gate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_fence_gate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_fence_gate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_fence_gate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_fence_gate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_fence_gate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_fence_gate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_fence_gate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_fence_gate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oak_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oak_stairs",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_stairs",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_stairs",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_stairs",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_stairs",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_stairs",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_stairs",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oak_planks",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_planks",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_planks",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_planks",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_planks",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_planks",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_planks",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_planks",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_planks",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_planks",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_planks",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_planks",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_acacia_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_oak_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_spruce_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_birch_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_jungle_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_dark_oak_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_mangrove_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_cherry_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_pale_oak_log",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:trapdoor",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_trapdoor",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_trapdoor",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_trapdoor",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_trapdoor",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_trapdoor",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_trapdoor",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_trapdoor",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_trapdoor",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_trapdoor",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_trapdoor",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_trapdoor",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oak_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_oak_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_spruce_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_birch_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_jungle_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_acacia_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_dark_oak_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_mangrove_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_cherry_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_pale_oak_wood",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:wooden_button",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_button",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:wooden_door",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_door",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_door",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_door",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_door",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_door",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_door",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_door",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_door",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_door",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_door",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_door",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:wooden_pressure_plate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_pressure_plate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_mosaic_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:standing_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_standing_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_standing_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_standing_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_standing_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:darkoak_standing_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_standing_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_standing_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_standing_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_standing_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_standing_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_standing_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:wall_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_wall_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_wall_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_wall_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_wall_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:darkoak_wall_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_wall_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_wall_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_wall_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_wall_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_wall_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_wall_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oak_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oak_hanging_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_hanging_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_hanging_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_hanging_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_hanging_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_hanging_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_hanging_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_hanging_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_hanging_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_hanging_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_hanging_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_hanging_sign",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_mosaic_stairs",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_block",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stripped_bamboo_block",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:chiseled_bookshelf",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_sapling",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo_mosaic",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oak_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_slab",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:fletching_table",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_button",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_button",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_button",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_button",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_button",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_button",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_button",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_button",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_button",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_button",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:spruce_pressure_plate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:birch_pressure_plate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:jungle_pressure_plate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:acacia_pressure_plate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dark_oak_pressure_plate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mangrove_pressure_plate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cherry_pressure_plate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pale_oak_pressure_plate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:crimson_pressure_plate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:warped_pressure_plate",
+                        "speed": 16,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    }
+                ]
+            },
+            "minecraft:swing_duration": {
+                "value": 0.3
+            },
+            "minecraft:cooldown": {
+                "category": "copper_command_block_axe_cooldown",
+                "duration": 0.5,
+                "type": "use"
+            },
+            "item:has_durability": {}
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "netherite_command_block_shovel_e445baf5"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:netherite_shovel",
+        "data": 0
+      },
+      "B": {
+        "item": "witherstormmod:command_block_book",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "witherstormmod:netherite_command_block_shovel",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "copper_command_block_pickaxe_720a2187"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:copper_pickaxe",
+        "data": 0
+      },
+      "B": {
+        "item": "witherstormmod:command_block_book",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "witherstormmod:copper_command_block_pickaxe",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,781 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "witherstormmod:command_blockbowels",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"command_block",
+					"tentacletags",
+					"remove_tag",
+					{
+						"fullhealth": "query.health==4000"
+					}
+				]
+			},
+			"animations": {
+				"command_block": "controller.animation.command_block",
+				"tentacletags": "animation.command_blockbowels.tentacle.tags",
+				"remove_tag": "animation.command_blockbowels.remove.commandtag",
+				"fullhealth": "animation.command_blockbowels.fullhealth"
+			}
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"bossbar": {
+				"minecraft:boss": {
+					"should_darken_sky": false,
+					"name": "entity.witherstormmod:command_block.name"
+				}
+			},
+			"pulse_1": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"pulse_2": {
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"pulse_3": {
+				"minecraft:variant": {
+					"value": 3
+				}
+			},
+			"pulse_4": {
+				"minecraft:variant": {
+					"value": 4
+				}
+			},
+			"damaged": {
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 14.1,
+					"time_down_event": {
+						"event": "normal"
+					}
+				}
+			},
+			"death": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 10,
+					"time_down_event": {
+						"event": "minecraft:despawn"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:nameable": {},
+			"minecraft:type_family": {
+				"family": [
+					"monster",
+					"mob",
+					"wither_storm",
+					"command_block"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 1.025,
+				"height": 1.25
+			},
+			"minecraft:navigation.float": {
+				"can_float": true
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:movement": {
+				"value": 0
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:health": {
+				"value": 4000,
+				"min": 1
+			},
+			"minecraft:rideable": {
+				"seat_count": 6,
+				"family_types": [
+					"tentacle"
+				],
+				"seats": [
+					{
+						"position": [
+							3,
+							-1.5,
+							1.5
+						],
+						"rotate_rider_by": 105,
+						"lock_rider_rotation": 0
+					},
+					{
+						"position": [
+							-3,
+							-1.5,
+							-1.5
+						],
+						"rotate_rider_by": 285,
+						"lock_rider_rotation": 0
+					},
+					{
+						"position": [
+							-3,
+							-1.5,
+							1.5
+						],
+						"rotate_rider_by": 255,
+						"lock_rider_rotation": 0
+					},
+					{
+						"position": [
+							3,
+							-1.5,
+							-1.5
+						],
+						"rotate_rider_by": 75,
+						"lock_rider_rotation": 0
+					},
+					{
+						"position": [
+							3.5,
+							-1.5,
+							0
+						],
+						"rotate_rider_by": -263,
+						"lock_rider_rotation": 0
+					},
+					{
+						"position": [
+							-3.5,
+							-1.5,
+							0
+						],
+						"rotate_rider_by": 266,
+						"lock_rider_rotation": 0
+					}
+				]
+			},
+			"minecraft:movement.basic": {
+				"max_turn": 0
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0,
+				"breathes_air": true,
+				"breathes_water": true,
+				"breathes_solids": true
+			},
+			"minecraft:attack": {
+				"damage": 0
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:follow_range": {
+				"value": 0,
+				"max": 0
+			},
+			"minecraft:behavior.hurt_by_target": {},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false,
+				"push_towards_closest_space": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "override",
+						"deals_damage": true
+					},
+					{
+						"on_damage": {
+							"filters": {
+								"test": "has_tag",
+								"subject": "self",
+								"operator": "==",
+								"value": "protected"
+							},
+							"event": "witherstormmod:command_block_false_hit"
+						},
+						"deals_damage": false
+					},
+					{
+						"on_damage": {
+							"filters": {
+								"any_of": [
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:command_block_axe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:command_block_sword"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:command_block_hoe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:command_block_shovel"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:command_block_pickaxe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:iron_command_block_axe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:iron_command_block_sword"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:iron_command_block_hoe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:iron_command_block_shovel"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:iron_command_block_pickaxe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:stone_command_block_axe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:stone_command_block_sword"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:stone_command_block_hoe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:stone_command_block_shovel"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:stone_command_block_pickaxe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:golden_command_block_axe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:golden_command_block_sword"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:golden_command_block_hoe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:golden_command_block_shovel"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:golden_command_block_pickaxe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:wooden_command_block_axe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:wooden_command_block_sword"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:wooden_command_block_hoe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:wooden_command_block_shovel"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:wooden_command_block_pickaxe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:netherite_command_block_axe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:netherite_command_block_sword"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:netherite_command_block_hoe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:netherite_command_block_shovel"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:netherite_command_block_pickaxe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:copper_command_block_axe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:copper_command_block_sword"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:copper_command_block_hoe"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:copper_command_block_shovel"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "witherstormmod:copper_command_block_pickaxe"
+									}
+								]
+							},
+							"event": "witherstormmod:command_block_damaged"
+						},
+						"deals_damage": false
+					},
+					{
+						"on_damage": {
+							"filters": {
+								"all_of": [
+									{
+										"none_of": [
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:command_block_axe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:command_block_sword"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:command_block_hoe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:command_block_shovel"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:command_block_pickaxe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:iron_command_block_axe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:iron_command_block_sword"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:iron_command_block_hoe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:iron_command_block_shovel"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:iron_command_block_pickaxe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:stone_command_block_axe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:stone_command_block_sword"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:stone_command_block_hoe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:stone_command_block_shovel"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:stone_command_block_pickaxe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:gold_command_block_axe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:gold_command_block_sword"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:gold_command_block_hoe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:gold_command_block_shovel"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:gold_command_block_pickaxe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:wooden_command_block_axe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:wooden_command_block_sword"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:wooden_command_block_hoe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:wooden_command_block_shovel"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:wooden_command_block_pickaxe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:netherite_command_block_axe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:netherite_command_block_sword"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:netherite_command_block_hoe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:netherite_command_block_shovel"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:netherite_command_block_pickaxe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:copper_command_block_axe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:copper_command_block_sword"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:copper_command_block_hoe"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:copper_command_block_shovel"
+											},
+											{
+												"test": "has_equipment",
+												"domain": "hand",
+												"subject": "other",
+												"value": "witherstormmod:copper_command_block_pickaxe"
+											}
+										]
+									}
+								]
+							},
+							"event": "witherstormmod:command_block_false_hit"
+						},
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:tick_world": {
+				"never_despawn": true
+			},
+			"minecraft:persistent": {}
+		},
+		"events": {
+			"minecraft:despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
+			"activate_bossbar": {
+				"add": {
+					"component_groups": [
+						"bossbar"
+					]
+				}
+			},
+			"death_event": {
+				"add": {
+					"component_groups": [
+						"death"
+					]
+				}
+			},
+			"pulse_1": {
+				"add": {
+					"component_groups": [
+						"pulse_1"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"pulse_2",
+						"pulse_3",
+						"pulse_4"
+					]
+				}
+			},
+			"pulse_2": {
+				"add": {
+					"component_groups": [
+						"pulse_2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"pulse_1",
+						"pulse_3",
+						"pulse_4"
+					]
+				}
+			},
+			"pulse_3": {
+				"add": {
+					"component_groups": [
+						"pulse_3"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"pulse_1",
+						"pulse_2",
+						"pulse_4"
+					]
+				}
+			},
+			"pulse_4": {
+				"add": {
+					"component_groups": [
+						"pulse_4"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"pulse_1",
+						"pulse_2",
+						"pulse_3"
+					]
+				}
+			},
+			"witherstormmod:command_block_false_hit": {
+				"queue_command": {
+					"command": "playsound mob.command_block.hit @a[r=64]"
+				}
+			},
+			"witherstormmod:command_block_damaged": {
+				"add": {
+					"component_groups": [
+						"damaged"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"damage @s 1000 override",
+						"playsound mob.command_block.hit @a[r=64]",
+						"playsound mob.withered_symbiont.hurt @a[r=64]",
+						"playsound bowels.loud_hurt @a[tag=in_bowels]",
+						"playanimation @e[type=witherstormmod:command_blocktentacle,tag=tentacle1] animation.tentacle.hurt1",
+						"playanimation @e[type=witherstormmod:command_blocktentacle,tag=tentacle3] animation.tentacle.hurt1",
+						"playanimation @e[type=witherstormmod:command_blocktentacle,tag=tentacle5] animation.tentacle.hurt1",
+						"playanimation @e[type=witherstormmod:command_blocktentacle,tag=tentacle2] animation.tentacle.hurt2",
+						"playanimation @e[type=witherstormmod:command_blocktentacle,tag=tentacle4] animation.tentacle.hurt2",
+						"playanimation @e[type=witherstormmod:command_blocktentacle,tag=tentacle6] animation.tentacle.hurt2",
+						"damage @e[type=witherstormmod:wither_storm_head] 10"
+					]
+				}
+			},
+			"normal": {
+				"remove": {
+					"component_groups": [
+						"damaged"
+					]
+				}
+			}
+		}
+	}
+}

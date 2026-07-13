@@ -1,0 +1,51 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "lightning_hoe": {
+      "textures": "textures/items/lightning_hoe"
+    },
+    "lightning_axe": {
+      "textures": "textures/items/lightning_axe"
+    },
+    "lightning_pickaxe": {
+      "textures": "textures/items/lightning_pickaxe"
+    },
+    "lightning_shovel": {
+      "textures": "textures/items/lightning_shovel"
+    },
+    "lightning_sword": {
+      "textures": "textures/items/lightning_sword"
+    },
+    "copper_command_block_hoe": {
+      "textures": "textures/items/copper_command_block_hoe"
+    },
+    "copper_command_block_axe": {
+      "textures": "textures/items/copper_command_block_axe"
+    },
+    "copper_command_block_shovel": {
+      "textures": "textures/items/copper_command_block_shovel"
+    },
+    "copper_command_block_pickaxe": {
+      "textures": "textures/items/copper_command_block_pickaxe"
+    },
+    "copper_command_block_sword": {
+      "textures": "textures/items/copper_command_block_sword"
+    },
+    "netherite_command_block_axe": {
+      "textures": "textures/items/netherite_command_block_axe"
+    },
+    "netherite_command_block_hoe": {
+      "textures": "textures/items/netherite_command_block_hoe"
+    },
+    "netherite_command_block_pickaxe": {
+      "textures": "textures/items/netherite_command_block_pickaxe"
+    },
+    "netherite_command_block_shovel": {
+      "textures": "textures/items/netherite_command_block_shovel"
+    },
+    "netherite_command_block_sword": {
+      "textures": "textures/items/netherite_command_block_sword"
+    }
+  }
+}

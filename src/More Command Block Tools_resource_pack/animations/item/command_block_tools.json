@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.attachables_command_block_tools_3rd1": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [90.02433, 40.14737, -89.28714],
+					"position": [-0.01, -0.065, -3.83],
+					"scale": [0.635, 0.635, 0.935]
+				}
+			}
+		},
+		"animation.attachables_command_block_tools_1st1": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [28.71587, 4.08792, -520.99994],
+					"position": [-7.8, 3.4, -4.2],
+					"scale": [0.45, 0.45, 0.68]
+				}
+			}
+		}
+	}
+}

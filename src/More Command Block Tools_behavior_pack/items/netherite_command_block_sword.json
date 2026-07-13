@@ -1,0 +1,66 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "witherstormmod:netherite_command_block_sword",
+            "menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.sword"
+            }
+        },
+        "components": {
+            "minecraft:icon": "netherite_command_block_sword",
+            "minecraft:max_stack_size": 1,
+            "minecraft:stacked_by_data": true,
+            "minecraft:hand_equipped": true,
+            "minecraft:enchantable": {
+                "slot": "sword",
+                "value": 10
+            },
+            "minecraft:mining_speed": 1,
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "witherstormmod:netherite_command_block_sword"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability + 0.2 * context.other->query.max_durability"
+                    }
+                ]
+            },
+            "minecraft:damage": 12,
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_sword",
+                    "minecraft:transformable_items",
+                    "minecraft:trimmable_armors"
+                ]
+            },
+            "minecraft:allow_off_hand": true,
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:web",
+                        "speed": 40,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    }
+                ]
+            },
+            "minecraft:glint": false,
+            "minecraft:swing_duration": {
+                "value": 0.3
+            },
+            "minecraft:cooldown": {
+                "category": "netherite_command_block_sword_cooldown",
+                "duration": 0.5,
+                "type": "attack"
+            },
+            "witherstormmod_netherite_command_block_sword:trigger": {},
+            "item:has_durability": {}
+        }
+    }
+}

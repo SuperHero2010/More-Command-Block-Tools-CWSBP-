@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "netherite_command_block_axe_75dc5c2b_2"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AB"
+    ],
+    "key": {
+      "A": {
+        "item": "witherstormmod:command_block_axe",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:netherite_ingot",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "witherstormmod:netherite_command_block_axe",
+      "count": 1
+    }
+  }
+}

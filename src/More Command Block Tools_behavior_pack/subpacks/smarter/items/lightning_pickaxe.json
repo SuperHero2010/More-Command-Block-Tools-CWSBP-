@@ -1,0 +1,1523 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:item": {
+        "description": {
+            "identifier": "witherstormmod:lightning_pickaxe",
+            "menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.pickaxe"
+            }
+        },
+        "components": {
+            "minecraft:icon": "lightning_pickaxe",
+            "minecraft:max_stack_size": 1,
+            "minecraft:stacked_by_data": true,
+            "minecraft:glint": true,
+            "minecraft:hand_equipped": true,
+            "minecraft:damage": 6,
+            "minecraft:enchantable": {
+                "slot": "pickaxe",
+                "value": 10
+            },
+            "minecraft:durability": {
+                "max_durability": 200
+            },
+            "minecraft:mining_speed": 1,
+            "minecraft:allow_off_hand": true,
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "minecraft:copper_ingot"
+                        ],
+                        "repair_amount": 4
+                    },
+                    {
+                        "items": [
+                            "minecraft:copper_pickaxe"
+                        ],
+                        "repair_amount": 8
+                    },
+                    {
+                        "items": [
+                            "witherstormmod:lightning_pickaxe"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability + 0.2 * context.other->query.max_durability"
+                    }
+                ]
+            },
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:transformable_items",
+                    "minecraft:is_pickaxe"
+                ]
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:copper_chest",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_copper_chest",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_copper_chest",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_copper_chest",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_copper_chest",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_copper_chest",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_copper_chest",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_copper_chest",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:copper_bars",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_copper_bars",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_copper_bars",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_copper_bars",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_copper_bars",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_copper_bars",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_copper_bars",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_copper_bars",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:copper_chain",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_copper_chain",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_copper_chain",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_copper_chain",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_copper_chain",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_copper_chain",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_copper_chain",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_copper_chain",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:copper_lantern",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_copper_lantern",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_copper_lantern",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_copper_lantern",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_copper_lantern",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_copper_lantern",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_copper_lantern",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_copper_lantern",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:chiseled_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_chiseled_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_chiseled_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_chiseled_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_chiseled_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_chiseled_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_chiseled_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_chiseled_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:copper_block",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:raw_copper_block",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:chiseled_deepslate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cobbled_deepslate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cobbled_deepslate_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cobbled_deepslate_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cobbled_deepslate_wall",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:copper_ore",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cracked_deepslate_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cracked_deepslate_tiles",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate_brick_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate_brick_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate_brick_wall",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate_coal_ore",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate_copper_ore",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate_iron_ore",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate_redstone_ore",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate_tile_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate_tile_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate_tile_wall",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:deepslate_tiles",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:dripstone_block",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cut_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_cut_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_cut_copper_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_cut_copper_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:infested_deepslate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_cut_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_cut_copper_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_cut_copper_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:pointed_dripstone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:polished_deepslate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:polished_deepslate_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:polished_deepslate_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:polished_deepslate_wall",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_copper_block",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_cut_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_cut_copper_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_cut_copper_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_cut_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_cut_copper_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_cut_copper_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_cut_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_cut_copper_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_cut_copper_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_cut_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_cut_copper_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_cut_copper_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_cut_copper",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_cut_copper_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_cut_copper_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:chiseled_nether_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:coal_ore",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cobblestone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cobblestone_wall",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mossy_cobblestone_wall",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:sandstone_wall",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stone_brick_wall",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mossy_stone_brick_wall",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:nether_brick_wall",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:red_nether_brick_wall",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cracked_nether_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:infested_stone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:infested_cobblestone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:infested_stone_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:infested_mossy_stone_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:infested_cracked_stone_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:infested_chiseled_stone_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:iron_ore",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:lapis_ore",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:lodestone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mossy_cobblestone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mossy_cobblestone_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mossy_stone_brick_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:nether_brick",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:nether_brick_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:nether_gold_ore",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:nether_wart_block",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:netherrack",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:normal_stone_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:quartz_ore",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:red_nether_brick",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:red_nether_brick_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:red_sandstone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:chiseled_red_sandstone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cut_red_sandstone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:smooth_red_sandstone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:red_sandstone_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:redstone_ore",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:sandstone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:chiseled_sandstone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cut_sandstone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:smooth_sandstone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:sandstone_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:smooth_red_sandstone_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:smooth_sandstone_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:smooth_stone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stone",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stone_brick_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:normal_stone_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:sandstone_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cobblestone_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stone_brick_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:nether_brick_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:smooth_stone_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:red_sandstone_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mossy_cobblestone_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:smooth_sandstone_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:red_nether_brick_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:smooth_red_sandstone_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mossy_stone_brick_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cut_sandstone_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cut_red_sandstone_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stone_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stone_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mossy_stone_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cracked_stone_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:chiseled_stone_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stonecutter",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:copper_trapdoor",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_copper_trapdoor",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_copper_trapdoor",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_copper_trapdoor",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_copper_trapdoor",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_copper_trapdoor",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_copper_trapdoor",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_copper_trapdoor",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stone_button",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:copper_door",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_copper_door",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_copper_door",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_copper_door",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_copper_door",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_copper_door",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_copper_door",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_copper_door",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:stone_pressure_plate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cut_copper_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:cut_copper_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:copper_bulb",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_copper_bulb",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_copper_bulb",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_copper_bulb",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_copper_bulb",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_copper_bulb",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_copper_bulb",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_copper_bulb",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:copper_grate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:exposed_copper_grate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:weathered_copper_grate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:oxidized_copper_grate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_copper_grate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_exposed_copper_grate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_weathered_copper_grate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:waxed_oxidized_copper_grate",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mud_bricks",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mud_brick_wall",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mud_brick_slab",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    },
+                    {
+                        "block": "minecraft:mud_brick_stairs",
+                        "speed": 5,
+                        "on_dig": {
+                            "event": "hurt"
+                        }
+                    }
+                ]
+            },
+            "minecraft:swing_duration": {
+                "value": 0.3
+            },
+            "minecraft:cooldown": {
+                "category": "lightning_pickaxe_cooldown",
+                "duration": 0.5,
+                "type": "use"
+            },
+            "minecraft:custom_components": [
+                "item:has_durability"
+            ]
+        }
+    }
+}
