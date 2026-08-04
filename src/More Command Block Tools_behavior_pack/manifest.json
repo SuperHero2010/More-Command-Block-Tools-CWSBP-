@@ -2,9 +2,9 @@
   "format_version": 2,
   "header": {
     "description": "Add more Command Block Tools for §5CWSBP:0.4.8.5§r by §4S§cu§6p§ee§1r§3H§be§2r§ao§52§d0§f1§00",
-    "name": "§5More Command Block Tools BP V2.0.2",
+    "name": "§5More Command Block Tools BP V2.1.0",
     "uuid": "d3f66765-158e-4433-bf03-9c62b102574f",
-    "version": [2, 0, 2],
+    "version": [2, 1, 0],
     "min_engine_version": [1, 21, 0]
   },
   "modules": [
@@ -12,12 +12,12 @@
       "description": "Add more Command Block Tools for §5CWSBP:0.4.8.5§r by §4S§cu§6p§ee§1r§3H§be§2r§ao§52§d0§f1§00",
       "type": "data",
       "uuid": "3dc1987e-f1bf-4ebb-a393-1570f9c58e26",
-      "version": [2, 0, 2]
+      "version": [2, 1, 0]
     },
     {
       "type": "script",
       "uuid": "77ece396-c556-4515-9784-e8ddfe175c4a",
-      "version": [2, 0, 2],
+      "version": [2, 1, 0],
       "entry": "scripts/main.js",
       "language": "javascript"
     }
@@ -42,7 +42,7 @@
   "dependencies": [
     {
       "uuid": "542a19d6-ebc7-412b-b81f-25ac9306d5c3",
-      "version": [2, 0, 2]
+      "version": [2, 1, 0]
     },
     {
       "version": "2.2.0",

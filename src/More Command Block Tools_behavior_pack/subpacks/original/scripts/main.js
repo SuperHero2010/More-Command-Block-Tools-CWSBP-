@@ -49,63 +49,55 @@ world.afterEvents.entityHitEntity.subscribe((event) => {
     if (lightningItems.includes(itemId)) {
         target.dimension.spawnEntity("minecraft:lightning_bolt", target.location);
 
-        target.applyDamage(5, { 
-            cause: "entityAttack", 
-            damagingEntity: player 
-        });
+        target.applyDamage(5, { cause: "entityAttack", damagingEntity: player });
 
         player.playSound("ambient.weather.thunder");
     }
 });
 
-const cooldownMap = new Map(); 
-world.beforeEvents.itemUseOn.subscribe((event) => { 
-    try { 
-        const player = event.source; 
-        const block = event.block; 
-        const item = event.itemStack; 
+const cooldownMap = new Map();
+world.beforeEvents.itemUseOn.subscribe((event) => {
+    try {
+        const player = event.source;
+        const block = event.block;
+        const item = event.itemStack;
 
-        let copper = false; 
-        let copperCommand = false; 
+        let copper = false;
+        let copperCommand = false;
 
-        if (item?.typeId?.includes("copper_")) { 
-            copper = true; 
-        } else if (item?.typeId?.includes("copper_command_block_")) { 
-            copperCommand = true; 
-        } 
+        if (item?.typeId?.includes("copper_")) {
+            copper = true;
+        } else if (item?.typeId?.includes("copper_command_block_")) {
+            copperCommand = true;
+        }
 
-        if (block?.typeId !== "minecraft:lightning_rod") return; 
+        if (block?.typeId !== "minecraft:lightning_rod") return;
 
-        event.cancel = true; 
+        event.cancel = true;
 
-        const now = Date.now(); 
-        const lastCraft = cooldownMap.get(player.id); 
-        if (lastCraft && (now - lastCraft) < 1000) return; 
-        cooldownMap.set(player.id, now); 
+        const now = Date.now();
+        const lastCraft = cooldownMap.get(player.id);
+        if (lastCraft && (now - lastCraft) < 1000) return;
+        cooldownMap.set(player.id, now);
 
         let lightningTool = "";
 
         if (copper) {
-            const toolType = item.typeId.replace("minecraft:copper_", ""); 
-            lightningTool = `witherstormmod:lightning_${toolType}`; 
+            const toolType = item.typeId.replace("minecraft:copper_", "");
+            lightningTool = `witherstormmod:lightning_${toolType}`;
         } else if (copperCommand) {
-            const commandToolType = item.typeId.replace("witherstormmod:lightning_copper_command_block_", ""); 
-            lightningTool = `witherstormmod:lightning_copper_command_block_${commandToolType}`; 
-        } else {
-            return;
-        }
+            const commandToolType = item.typeId.replace("witherstormmod:lightning_copper_command_block_", "");
+            lightningTool = `witherstormmod:lightning_copper_command_block_${commandToolType}`;
+        } else return;
 
-        const playerName = player.name; 
+        const playerName = player.name;
 
-        player.dimension.runCommandAsync(`clear "${playerName}" ${item.typeId} -1 1`) 
-            .then(() => { 
-                return player.dimension.runCommandAsync(`give "${playerName}" ${lightningTool} 1`); 
-            }) 
-            .then(() => { 
-                player.dimension.spawnParticle("minecraft:electric_spark", block.location); 
-                player.playSound("ambient.weather.thunder"); 
-            }) 
-            .catch(() => {}); 
+        player.dimension.runCommandAsync(`clear "${playerName}" ${item.typeId} -1 1`).then(() => {
+                return player.dimension.runCommandAsync(`give "${playerName}" ${lightningTool} 1`);
+            }).then(() => {
+                player.dimension.spawnParticle("minecraft:electric_spark", block.location);
+                player.playSound("ambient.weather.thunder");
+            }).catch(() => {});
 
     } catch (e) {
         console.error("Crafting error:", e);

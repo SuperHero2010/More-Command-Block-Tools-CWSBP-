@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "witherstormmod:lightning_axe",
+      "materials": {
+        "default": "enderman",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/dynamic/lightning_items/copper/axe/1",
+        "item": "textures/dynamic/lightning_items/copper/axe/1",
+        "item2": "textures/dynamic/lightning_items/copper/axe/1-1",
+        "item3": "textures/dynamic/lightning_items/copper/axe/1-2",
+        "item4": "textures/dynamic/lightning_items/copper/axe/1-3",
+        "item5": "textures/dynamic/lightning_items/copper/axe/1-4",
+        "item6": "textures/dynamic/lightning_items/copper/axe/1-5",
+        "item7": "textures/dynamic/lightning_items/copper/axe/1-6",
+        "item8": "textures/dynamic/lightning_items/copper/axe/1-7",
+        "item9": "textures/dynamic/lightning_items/copper/axe/2"
+      },
+      "geometry": {
+        "default": "geometry.animated_item"
+      },
+      "animations": {
+        "3rd": "animation.attachables_animated_item_3rd1",
+        "1st": "animation.attachables_animated_item_1st1"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.is_holding_right = 0.0;",
+          "variable.is_holding_left = 0.0;"
+        ],
+        "animate": [
+          {
+            "3rd": "!c.is_first_person"
+          },
+          {
+            "1st": "c.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": [ "controller.render.dynamic_axe" ]
+    }
+  }
+}
